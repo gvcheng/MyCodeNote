@@ -4,7 +4,7 @@
 
 ## 一、框架简介
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\49e7ec84e112410092f49a3263c9f371\框架图.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0101.png)
 
 ### 1.1 三层架构
 
@@ -98,7 +98,7 @@ Java 框架为解决特定问题而存在，按层级分类：
 
 ### 2.1 原始JDBC操作
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\0f09db8393904bc78783b0bc350f32f2\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0102.png)
 
 
 
@@ -137,7 +137,7 @@ Java 框架为解决特定问题而存在，按层级分类：
 
 ### 2.3 MyBatis 介绍
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\684243ca43834e679a27e8b7531f1b9c\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0103.png)
 
 MyBatis 是一个基于 ORM（Object Relational Mapping，对象关系映射）的半自动轻量级持久层框架。它封装了 JDBC 操作数据库的复杂流程，开发者仅需关注 SQL 编写，无需手动处理注册驱动、创建 Connection 连接、创建 Statement、手动设置参数、结果集检索等繁琐的JDBC繁杂的过程代码。
 
@@ -157,9 +157,9 @@ MyBatis 是一个基于 ORM（Object Relational Mapping，对象关系映射）�
 
 2013 年 11 月：代码迁移至 GitHub，开源地址：https://github.com/mybatis/mybatis-3
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\a89e3ae7c5e54a5b948ef083b0e1db06\屏幕截图 2025-03-18 151135.jpg)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0104.jpg)
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\5b7a285ddec848c49626b26e22091a23\屏幕截图 2025-03-18 152827.jpg)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0105.jpg)
 
 
 
@@ -171,7 +171,7 @@ MyBatis 是一个基于 ORM（Object Relational Mapping，对象关系映射）�
 - **R（关系模型）**：数据库表结构（如表、字段）。
 - **M（映射）**：建立对象属性与表字段的对应关系。
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\54400793e4344005a99326508ec79091\mapping.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0106.png)
 
 **如何建立映射关系？**
 
@@ -205,7 +205,7 @@ MyBatis采用ORM思想解决了实体和数据库映射的问题。对jdbc 进�
 
 MyBatis官网地址：http://www.mybatis.org/mybatis-3/
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\c065d7e14202404b870e101a66a8f748\mybatisweb.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0107.png)
 
 **案例需求**：通过mybatis查询数据库user表的所有记录，封装到User对象中，打印到控制台上
 
@@ -412,7 +412,7 @@ public void mybatisTestQuickStart() throws IOException {
 
 ## 四、Mybatis映射文件描述
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\7d60d4e0a1a84ea7b852580886e5dd0a\usermapper.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0108.png)
 
 
 
@@ -663,7 +663,7 @@ MyBatis 的配置文件包含了会深深影响 MyBatis 行为的设置和属性
 
 数据库环境的配置，支持多环境配置
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\b8e5229314424e8f83e2da9e0cdac183\environments_.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0109.png)
 
 **1.事务管理器（transactionManager）类型有两种：**
 
@@ -706,7 +706,7 @@ jdbc.username=root
 jdbc.password=0709
 ```
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\80561507f5814772a977410807be9625\properties.jpg)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0110.jpg)
 
 
 
@@ -727,13 +727,21 @@ jdbc.password=0709
 
 原来的类型名称配置如下
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\8e7798fcc11c415381cc00001c6f231e\typealiases.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0111.png)
 
 配置typeAliases，为com.gvc.domain.User定义别名为user
 
-<!--设置别名--> <typeAliases>    <!--方式一：给单个实体起别名-->    <typeAlias type="com.gvc.domain.User" alias="user"></typeAlias>    <!--方式二：批量起别名, 别名就是类名，且不区分大小写-->    <package name="com.gvc.domain"/> </typeAliases>
+```xml
+<!--设置别名-->
+<typeAliases>
+    <!--方式一：给单个实体起别名-->
+    <typeAlias type="com.gvc.domain.User" alias="user"></typeAlias>
+    <!--方式二：批量起别名, 别名就是类名，且不区分大小写-->
+    <package name="com.gvc.domain"/>
+</typeAliases>
+```
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\033e8cfd9a054b55a5a2718a2a16a119\typealiases.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0112.png)
 
 
 
@@ -870,7 +878,7 @@ void rollback()
 
 #### 7.2 MyBatis 基本原理介绍
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\80b99d5b7e5846c5b7fc14af708401aa\mybatis.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0113.png)
 
 
 
@@ -966,7 +974,7 @@ public void testFindAll() throws Exception {
 
 这种开发方式要求我们遵循一定的规范：
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\eaca8becca1a4318a1114b8d48986451\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0114.png)
 
 **规范要求**：
 
@@ -1038,14 +1046,14 @@ public void mybatisTestQuickStart() throws IOException {
 
 1、通过追踪源码我们会发现，我们使用的mapper实际上是一个代理对象,是由**MapperProxy**代理产生的。
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\26a357bfb1704e109577925b92ed1816\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0115.png)
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\78425a2df71343d1a3f97e362ba313a9\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0116.png)
 
 2、追踪MapperProxy的invoke方法会发现，其最终调用了mapperMethod.execute(sqlSession, args)
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\acaf107415ea4431a03ee91d7eb1a204\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0117.png)
 
 3、进入execute方法会发现，最终工作的还是sqlSession
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\431f32777a714f29ba8779888d8a8057\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0118.png)
