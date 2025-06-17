@@ -129,7 +129,7 @@
 
 **工作流程**：
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\1ae2de3a961044a385c5149c6c0320eb\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0301.png)
 
 
 
@@ -166,7 +166,7 @@
 
 一级缓存是SqlSession范围的缓存，执行SqlSession的 C（增加）U（更新）D（删除）操作，或者调用clearCache()、commit()、close()方法，都会清空缓存。
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\beeb39272a2c4d04ba6e2f8e9d618e23\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0302.png)
 
 1. 第一次发起查询用户id为41的用户信息，先去找缓存中是否有id为41的用户信息，如果没有，从数据库查询用户信息。
 2. 得到用户信息，将用户信息存储到一级缓存中。
@@ -175,7 +175,7 @@
 
 4.第二次发起查询用户id为41的用户信息，先去找缓存中是否有id为41的用户信息，缓存中有，直接从缓存中获取用户信息。
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\b3e4ac79d1034f23b5530b9155585609\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0303.png)
 
 #### 2.2.4 清除
 
@@ -201,7 +201,7 @@ sqlSession.close();
 
 二级缓存的开启需要进行配置，实现二级缓存的时候，MyBatis要求返回的POJO必须是可序列化的。也就是要求实现Serializable接口，配置方法很简单，只需要在映射XML文件配置 <cache/> 就可以开启二级缓存了。
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\2176009f93a84dde99e731d57c4111db\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0304.png)
 
 
 
@@ -267,7 +267,7 @@ public void testTwoCache() throws IOException {
 
 二级缓存是mapper映射级别的缓存，多个SqlSession去操作同一个Mapper映射的sql语句，多个 SqlSession可以共用二级缓存，二级缓存是跨SqlSession的。
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\56783960022047be8a4328d57dc11498\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0305.png)
 
 1. 映射语句文件中的所有select语句将会被缓存。
 2. 映射语句文件中的所有insert、update和delete语句会刷新缓存。
@@ -278,7 +278,7 @@ public void testTwoCache() throws IOException {
 
 mybatis的二级缓存因为是namespace级别，所以在进行多表查询时会产生脏读问题。
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\81ba2ceedeb9410291fdcf43085d876f\3-2.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0306.png)
 
 
 
@@ -440,7 +440,7 @@ public class MybatisTest    {
 
 使用注解开发后，我们可以使```@Results、@Result、@One、@Many ```注解组合完成复杂关系的配置。
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\28246a8b003744039db145880a286275\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0307.png)
 
 
 
@@ -570,7 +570,7 @@ public void testOneToMany() throws IOException {
 }
 ```
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\e9920669eb974688b5c9a5812b61b143\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0308.png)
 
 
 
