@@ -742,25 +742,25 @@ public void testFindByAraay() throws IOException {
 
 **MyBatis映射文件配置**
 
-> **<select>**：查询
->
-> **<insert>**：插入
->
-> **<update>**：修改
->
-> **<delete>**：删除
->
-> **<selectKey>**：返回主键
->
-> **<where>**：where条件
->
-> **<if>**：if判断
->
-> **<foreach>**：for循环
->
-> **<set>**：set设置
->
-> **<sql>**：sql片段抽取
+ **<select>**：查询
+
+ **<insert>**：插入
+
+ **<update>**：修改
+
+ **<delete>**：删除
+
+ **<selectKey>**：返回主键
+
+**<where>**：where条件
+
+**<if>**：if判断
+
+**<foreach>**：for循环
+
+ **<set>**：set设置
+
+ **<sql>**：sql片段抽取
 
 
 
