@@ -10,11 +10,11 @@
 
  建立对象关系映射
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\60ec036ef9674ca8ba7c19e52e5a4db7\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0201.png)
 
 **resultType** 如果实体的属性名表中字段名一致，将查询结果自动封装到实体类中
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\5455bc49bb0d4904ae7b6a51224ef711\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0202.png)
 
 **resutlMap** 如果实体的属性名与表中字段名不一致，可以使用ResutlMap实现手动封装到实体类中
 
@@ -389,7 +389,7 @@ public interface UserMapper {
 
 **UserMapper.xml**
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\0ac4c4be24ef4865acebf49846e48982\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0203.png)
 
 ```xml
 <!-- 添加用户，获取返回主键：方式二 -->
@@ -438,7 +438,7 @@ public void testSaveUser2() throws IOException {
 
 **应用场景:** 当我们要根据不同的条件，来执行不同的sql语句的时候，需要用到动态sql。
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\15029aacd1ff4a0f9e415a2f2e22d2eb\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0204.png)
 
 #### 2.2.1 动态 SQL 之 标签 if
 
@@ -943,7 +943,7 @@ DROP TABLE IF EXISTS `orders`;
 
 **一对一查询的需求**：查询所有订单，与此同时查询出每个订单所属的用户。
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\f30842f8289e4c3d89f50ada7c20d04e\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0205.png)
 
 **一对一查询语句**
 
@@ -953,7 +953,7 @@ DROP TABLE IF EXISTS `orders`;
 
 #### 4.2.2 代码实现
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\0787c43b8da342e2b2a4d50c3fbcc5e9\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0206.png)
 
 **（1）Order实体**
 
@@ -1042,7 +1042,7 @@ public void testFindAllWithUser() throws IOException {
 
 **一对多查询的需求**：查询所有用户，与此同时查询出该用户具有的订单。
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\02d16b5db4714fab913a717ab5f11d3b\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0207.png)
 
 **一对多查询语句**
 
@@ -1140,7 +1140,7 @@ public void testFindAllWithOrders() throws IOException {
 
 **多对多查询的需求**： 
 
-![img](C:\D_Data\SysTools\Youdao Note\Youdao Files\ggvxcc@163.com\14503dfdc64541fbaa5f9a9ec73fe3fb\clipboard.png)
+![img](https://github.com/gvc10233/note_images/blob/main/mybatis_img/mybatis0208.png)
 
 **多对多查询语句**
 
