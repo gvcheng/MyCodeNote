@@ -739,7 +739,6 @@ public void testFindByAraay() throws IOException {
 
 
 **2.4 知识小结**
-
 **MyBatis映射文件配置**
 
 > **<select>**：查询
