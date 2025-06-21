@@ -67,7 +67,7 @@ Spring作为容器，统一管理对象的创建和依赖关系。
 
 **耦合度**指对象间的关联程度，高耦合会导致修改一个对象需同步修改其他对象，增加维护成本。Spring通过IoC降低耦合。
 
-![spring0101](C:\D_Data\CommonFiles\Images\学习相关\ssm\spring0101.png)
+![spring0101](https://github.com/gvc10233/note_images/blob/main/spring_img/spring0101.png)
 
 **（2）AOP编程支持**
 
@@ -89,7 +89,7 @@ Spring作为容器，统一管理对象的创建和依赖关系。
 
 ### 1.4 Spring体系结构
 
-![spring0102](C:\D_Data\CommonFiles\Images\学习相关\ssm\spring0102.png)
+![spring0102](https://github.com/gvc10233/note_images/blob/main/spring_img/spring0102.png)
 
 
 
@@ -113,13 +113,13 @@ Spring作为容器，统一管理对象的创建和依赖关系。
 >
 > 需要UserDao实例时，直接从Spring IOC容器获取，对象创建权交给Spring。
 
-![spring0103](C:\D_Data\CommonFiles\Images\学习相关\ssm\spring0103.png)
+![spring0103](https://github.com/gvc10233/note_images/blob/main/spring_img/spring0103.png)
 
 
 
 ### 2.2 自定义IOC容器
 
-![spring0103](C:\D_Data\CommonFiles\Images\学习相关\ssm\spring0104.png)
+![spring0104](https://github.com/gvc10233/note_images/blob/main/spring_img/spring0104.png)
 
 #### 2.2.1 介绍
 
@@ -383,7 +383,7 @@ public class SpringTest {
 }
 ```
 
-![spring0105](C:\D_Data\CommonFiles\Images\学习相关\ssm\spring0105.png)
+![spring0105](https://github.com/gvc10233/note_images/blob/main/spring_img/spring0105.png)
 
 ### 3.3 知识小结
 
@@ -405,7 +405,7 @@ public class SpringTest {
 
 Spring的API体系庞大，我们主要关注两个核心接口：**BeanFactory**、**ApplicationContext**
 
-![spring0106](C:\D_Data\CommonFiles\Images\学习相关\ssm\spring0106.png)
+![spring0106](https://github.com/gvc10233/note_images/blob/main/spring_img/spring0106.png)
 
 ### 4.2 BeanFactory
 
@@ -655,7 +655,7 @@ public class UserServiceImpl implements IUserService {
     </bean>
 ```
 
-![spring0107](C:\D_Data\CommonFiles\Images\学习相关\ssm\spring0107.png)
+![spring0107](https://github.com/gvc10233/note_images/blob/main/spring_img/spring0107.png)
 
 
 
@@ -1573,7 +1573,7 @@ Spring常用注解主要是替代 <bean> 的配置
 | @PostConstruct | 使用在方法上标注该方法是Bean的初始化方法      |
 | @PreDestroy    | 使用在方法上标注该方法是Bean的销毁方法        |
 
-![spring0108](C:\D_Data\CommonFiles\Images\学习相关\ssm\spring0108.png)
+![spring0108](https://github.com/gvc10233/note_images/blob/main/spring_img/spring0108.png)
 
 **说明：**
 
@@ -1761,7 +1761,7 @@ public class AccountServiceImpl implements AccountService {
     http://www.springframework.org/schema/context/spring-context.xsd">  
 
 <!-- 注解的组件扫描 -->  
-<context:component-scan base-package="com.lagou"></context:component-scan>  
+<context:component-scan base-package="com.gvc"></context:component-scan>  
 
 <!-- 加载jdbc配置文件 -->
 <context:property-placeholder location="classpath:jdbc.properties"/>
@@ -1823,7 +1823,7 @@ public class AccountServiceImpl implements AccountService {
 
 ---
 
-![spring0109](C:\D_Data\CommonFiles\Images\学习相关\ssm\spring0109.png)
+![spring0109](https://github.com/gvc10233/note_images/blob/main/spring_img/spring0109.png)
 
 ### 7.4 Spring纯注解整合DbUtils
 
