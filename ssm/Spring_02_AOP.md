@@ -244,7 +244,7 @@ public class ConnectionUtils {
 }
 ```
 
-![spring0201](D:\Program\MyNotes\notes_image\spring0201.png)
+![spring0201](https://github.com/gvc10233/note_images/blob/main/spring_img/spring0201.png)
 
 #### （2）编写事务管理器
 
@@ -326,7 +326,7 @@ public class AccountServiceImpl implements AccountService {
 }
 ```
 
-![spring0202](D:\Program\MyNotes\notes_image\spring0202.png)
+![spring0202](https://github.com/gvc10233/note_images/blob/main/spring_img/spring0202.png)
 
 #### （4）修改DAO层代码
 
@@ -375,7 +375,7 @@ public class AccountDaoImpl implements AccountDao {
 - **JDK 代理**：基于接口的动态代理技术。利用拦截器（必须实现 InvocationHandler）加上反射机制生成一个代理接口的匿名类，在调用具体方法前调用 InvokeHandler 处理，实现方法增强。
 - **Cglib 代理**：基于父类的动态代理技术。动态生成要代理的子类，子类重写要代理类的所有非 final 方法，在子类中采用方法拦截技术拦截所有父类方法的调用，织入横切逻辑，实现方法增强。
 
-![spring0203](D:\Program\MyNotes\notes_image\Spring0203.png)
+![spring0203](https://github.com/gvc10233/note_images/blob/main/spring_img/spring0203.png)
 
 ### 2.1 JDK 动态代理方式
 
@@ -424,7 +424,7 @@ public class JDKProxyFactory {
 }
 ```
 
-![](D:\Program\MyNotes\notes_image\spring0204.png)
+![spring0204](https://github.com/gvc10233/note_images/blob/main/spring_img/spring0204.png)
 
 #### 测试代码
 
@@ -551,7 +551,7 @@ Spring 的 AOP 实现底层封装了动态代理代码，开发者只需编写�
 - * Weaving（织入）：将增强应用到目标对象创建新代理对象的过程，Spring 采用动态代理织入，AspectJ 采用编译期织入和类装载期织入。
 ```
 
-![spring0205](D:\Program\MyNotes\notes_image\spring0205.png)
+![spring0205](https://github.com/gvc10233/note_images/blob/main/spring_img/spring0205.png)
 
 ### 3.4 AOP 开发明确事项
 
@@ -1153,6 +1153,7 @@ public class TransactionManager {
     }
 }
 ```
+
 
 
 
