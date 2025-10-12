@@ -642,7 +642,7 @@ TransactionDefinition 接口提供事务的定义信息（事务隔离级别、�
 | NEVER         | 以非事务方式运行；如果当前存在事务，抛出异常                 |
 | NESTED        | 如果当前存在事务，在嵌套事务内执行；如果当前没有事务，执行与 REQUIRED 类似操作 |
 
-![spring0301](D:\Program\MyNotes\notes_image\spring0301.png)
+![spring0301](https://github.com/gvc10233/note_images/blob/main/spring_img/spring0301.png)
 
 ```markdown
 * read-only（是否只读）：建议查询时设置为只读，提高性能。
@@ -1099,4 +1099,5 @@ public class AccountServlet extends HttpServlet {
     }
 }
 ```
+
 
