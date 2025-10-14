@@ -22,7 +22,7 @@ MVC 是软件工程中的一种软件架构模式，核心是分离业务逻辑�
 - **V（View，视图）**：展示内容（如 JSP、HTML 页面）。
 - **C（Controller，控制器）**：负责调度分发，核心职责包括：1. 接收客户端请求；2. 调用模型处理业务；3. 转发到视图展示结果。
 
-![0101](D:\Program\MyNotes\notes_image\springMVC0101.png)
+![0101](https://github.com/gvcheng/note_images/blob/main/springMVC_img/springMVC0101.png)
 
 ### 1.2 SpringMVC 概述
 
@@ -34,7 +34,7 @@ SpringMVC 是基于 Java 的轻量级 Web 框架，实现了 MVC 设计模式，
 - 简化开发：通过注解让普通 Java 类成为请求控制器，无需实现任何接口。
 - 支持 RESTful：原生支持 RESTful 编程风格的请求
 
-![0102](D:\Program\MyNotes\notes_image\springMVC0102.png)
+![0102](https://github.com/gvcheng/note_images/blob/main/springMVC_img/springMVC0102.png)
 
 #### 总结
 
@@ -194,13 +194,13 @@ public class UserController {
 </beans>
 ```
 
-![0105](D:\Program\MyNotes\notes_image\springMVC0105.png)
+![0105](https://github.com/gvcheng/note_images/blob/main/springMVC_img/springMVC0105.png)
 
 
 
 ### 1.4 Web 工程执行流程
 
-![0103](D:\Program\MyNotes\notes_image\springMVC0103.png)
+![0103](https://github.com/gvcheng/note_images/blob/main/springMVC_img/springMVC0103.png)
 
 
 
@@ -225,7 +225,7 @@ public class UserController {
 
 ### 2.1 SpringMVC 的执行流程
 
-![springMVC0303](D:\Program\MyNotes\notes_image\springMVC0104.png)
+![0104](https://github.com/gvcheng/note_images/blob/main/springMVC_img/springMVC0104.png)
 
 ```markdown
 1. 用户发送请求至前端控制器DispatcherServlet。 
@@ -398,7 +398,7 @@ public class UserController {
    }
    ```
 
-   ![0106](D:\Program\MyNotes\notes_image\springMVC0106.png)
+   ![0106](https://github.com/gvcheng/note_images/blob/main/springMVC_img/springMVC0106.png)
 
 
 
@@ -444,7 +444,7 @@ public class UserController {
 
 
 
-> POJO 的属性名需与请求参数`name`一致![0107](D:\Program\MyNotes\notes_image\springMVC0107.png)
+> POJO 的属性名需与请求参数`name`一致![0107](https://github.com/gvcheng/note_images/blob/main/springMVC_img/springMVC0107.png)
 
 
 
@@ -504,7 +504,7 @@ public class UserController {
 
 > 图示：
 >
-> ![0108](D:\Program\MyNotes\notes_image\springMVC0108.png)
+> ![0108](https://github.com/gvcheng/note_images/blob/main/springMVC_img/springMVC0108.png)
 
 
 
@@ -655,7 +655,7 @@ public String findByPage(@RequestParam(name = "pageNo", defaultValue = "1") Inte
 
 > **图示：**
 >
-> ![0109](D:\Program\MyNotes\notes_image\springMVC0109.png)
+> ![0109](https://github.com/gvcheng/note_images/blob/main/springMVC_img/springMVC0109.png)
 
 
 
@@ -743,7 +743,7 @@ public String returnString() {
 }
 ```
 
-![0110](D:\Program\MyNotes\notes_image\springMVC0110.png)
+![0110](https://github.com/gvcheng/note_images/blob/main/springMVC_img/springMVC0110.png)
 
 
 
@@ -895,7 +895,7 @@ public class UserController {
 
 当加载静态资源（如 jquery 文件）时，若 SpringMVC 前端控制器 DispatcherServlet 的`url-pattern`配置为`/`（缺省），会对所有静态资源进行处理，导致 Tomcat 内置的 DefaultServlet 无法处理静态资源，可通过以下两种方式放行静态资源。
 
-![0111](D:\Program\MyNotes\notes_image\springMVC0111.png)
+![0111](https://github.com/gvcheng/note_images/blob/main/springMVC_img/springMVC0111.png)
 
 ### 方式一：指定放行资源
 
@@ -918,3 +918,4 @@ public class UserController {
 ```
 
 该方式会让 SpringMVC 将无法处理的静态资源请求交给 Tomcat 的 DefaultServlet 处理。
+
