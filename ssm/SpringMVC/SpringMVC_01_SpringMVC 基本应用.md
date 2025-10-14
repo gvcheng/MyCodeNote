@@ -285,11 +285,9 @@ public class UserController {
 - 开发方式：编写 JSP 页面，通过 EL 表达式或 JSTL 获取模型数据
 
 # 笔试题：SpringMVC 的三大组件是什么？
-   处理器映射器（HandlerMapping）、处理器适配器（HandlerAdapter）、视图解析器（ViewResolver）。
+   处理器映射器（HandlerMapping）、处理器适配器（HandlerAdapter）、视图解析器（ViewResolver）(如有第四个：DispatcherServlet)。
 ```
 
-```xml
-```
 
 
 
@@ -918,4 +916,5 @@ public class UserController {
 ```
 
 该方式会让 SpringMVC 将无法处理的静态资源请求交给 Tomcat 的 DefaultServlet 处理。
+
 
