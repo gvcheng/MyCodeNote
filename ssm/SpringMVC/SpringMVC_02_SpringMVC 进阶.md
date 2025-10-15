@@ -243,7 +243,7 @@ public class RestFulController {
 }
 ```
 
-![0204](D:\Program\MyNotes\notes_image\springMVC0204.png)
+![0204](https://github.com/gvcheng/note_images/blob/main/springMVC_img/springMVC0204.png)
 
 
 
@@ -265,7 +265,7 @@ public class RestFulController {
 </form>
 ```
 
-![0201](D:\Program\MyNotes\notes_image\springMVC0201.png)
+![0201](https://github.com/gvcheng/note_images/blob/main/springMVC_img/springMVC0201.png)
 
 ### 3.2 文件上传原理
 
@@ -273,7 +273,7 @@ public class RestFulController {
 - 当 form 表单的`enctype`取值为`application/x-www-form-urlencoded`时，form 表单的正文内容格式是：`name=value&name=value`
 - 当 form 表单的`enctype`取值为`multipart/form-data`时，请求正文内容就变成多部分形式：
 
-![0202](D:\Program\MyNotes\notes_image\springMVC0202.png)
+![0202](https://github.com/gvcheng/note_images/blob/main/springMVC_img/springMVC0202.png)
 
 
 
@@ -388,7 +388,7 @@ public String filesUpload(String username, MultipartFile[] filePic) throws IOExc
 
 系统的 DAO、Service、Controller 层出现异常时，均通过`throws Exception`向上抛出，最终由 SpringMVC 前端控制器交由异常处理器进行统一处理。如下图:
 
-![0203](D:\Program\MyNotes\notes_image\springMVC0203.png)
+![0203](https://github.com/gvcheng/note_images/blob/main/springMVC_img/springMVC0203.png)
 
 
 
@@ -622,3 +622,4 @@ public class TargetController {
 | preHandle()       | 方法将在请求处理之前进行调用，该方法的返回值是布尔值 Boolean 类型。当它返回为 false 时，表示请求结束，后续的 Interceptor 和 Controller 都不再执行；当返回值为 true 时，就会继续调用下一个 Interceptor 的 preHandle 方法。 |
 | postHandle()      | 该方法是在当前请求进行处理之后被调用，前提是 preHandle 方法的返回值为 true 时才能被调用，且它会在 DispatcherServlet 进行视图返回渲染之前被调用，所以我们可以在这个方法中对 Controller 处理之后的 ModelAndView 对象进行操作。 |
 | afterCompletion() | 该方法将在整个请求结束之后，也就是在 DispatcherServlet 渲染了对应的视图之后执行，前提是 preHandle 方法的返回值为 true 时才能被调用。 |
+
