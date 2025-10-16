@@ -55,7 +55,7 @@ insert into `account`(`id`,`name`,`money`) values (1,'tom',1000), (2,'jerry',100
 
 ### (2) 创建 Web 项目
 
-> ![0301](D:\Program\MyNotes\notes_image\springMVC0301.png)
+> ![0301](https://github.com/gvcheng/note_images/blob/main/springMVC_img/springMVC0301.png)
 
 
 
@@ -445,7 +445,7 @@ public class AccountServiceImpl implements AccountService {
 
 ### (2) 导入页面资源
 
-> ![0302](D:\Program\MyNotes\notes_image\springMVC0302.png)
+> ![0302](https://github.com/gvcheng/note_images/blob/main/springMVC_img/springMVC0302.png)
 
 ### (3) 前端控制器（DispatcherServlet）
 
@@ -910,6 +910,7 @@ void deleteBatch(Integer[] ids);
     </where>
 </delete>
 ```
+
 
 
 
