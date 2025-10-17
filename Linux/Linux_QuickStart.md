@@ -8,7 +8,7 @@
 
 Linux 是一种开源的免费使用的类 Unix 操作系统。它的内核于1991年由Linus Tovards首次发布，同时该作者也是Git分布式版本控制系统的作者。
 
-![0101](D:\Program\MyNotes\notes_image\LinuxQuickStart\LinuxQuickStart0101.png)
+![0101](https://github.com/gvcheng/note_images/blob/main/Linux_img/LinuxQuickStart_img/LinuxQuickStart0101.png)
 
 
 
@@ -19,7 +19,7 @@ Linux 是一种开源的免费使用的类 Unix 操作系统。它的内核于19
 - **Shell**：用户与内核的交互接口，命令解释器，支持 Shell 编程语言。
 - **应用程序**：基于内核和 Shell 运行的各类软件。
 
-![0102](D:\Program\MyNotes\notes_image\LinuxQuickStart\LinuxQuickStart0102.png)
+![0102](https://github.com/gvcheng/note_images/blob/main/Linux_img/LinuxQuickStart_img/LinuxQuickStart0102.png)
 
 
 
@@ -29,7 +29,7 @@ Linux 是一种开源的免费使用的类 Unix 操作系统。它的内核于19
 
 **vi中有三种常用的模式：命令模式、插入模式、尾行模式**
 
-![0103](D:\Program\MyNotes\notes_image\LinuxQuickStart\LinuxQuickStart0103.png)
+![0103](https://github.com/gvcheng/note_images/blob/main/Linux_img/LinuxQuickStart_img/LinuxQuickStart0103.png)
 
 ### 2.1  **命令模式（Command Mode，默认模式）**
 
@@ -42,7 +42,7 @@ Linux 是一种开源的免费使用的类 Unix 操作系统。它的内核于19
 
 ### 2. 2 **插入模式（Insert Mode）**
 
-![](D:\Program\MyNotes\notes_image\LinuxQuickStart\LinuxQuickStart0104.png)
+![0104](https://github.com/gvcheng/note_images/blob/main/Linux_img/LinuxQuickStart_img/LinuxQuickStart0104.png)
 
 - **进入方式**：在命令模式下按 `i`（光标前插入）、`a`（光标后插入）、`o`（当前行下方新增一行并插入）等键。
 - **核心功能**：直接输入和编辑文本，类似普通文本编辑器的编辑状态。
@@ -192,6 +192,7 @@ Linux 是多用户系统，权限控制是核心安全机制。
    - 压缩：`tar -zcvf archive.tar.gz dir1/`：将 dir1 目录压缩为 archive.tar.gz。
    - 解压：`tar -zxvf archive.tar.gz`：将 archive.tar.gz 解压到当前目录。
 ```
+
 
 
 
