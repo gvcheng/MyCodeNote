@@ -18,14 +18,14 @@
 
 数据访问量不大，简单架构即可满足需求。
 
-![0101](D:\Program\MyNotes\notes_image\Redis\Redis0101.png)
+![0101](https://github.com/gvcheng/note_images/blob/main/Redis_img/Redis0101.png)
 
 #### 第 2 阶段
 
 - 数据访问量增大，引入缓存技术缓解数据库压力。
 - 不同业务对应不同数据库。
 
-![Redis0102](D:\Program\MyNotes\notes_image\Redis\Redis0102.png)
+![Redis0102](https://github.com/gvcheng/note_images/blob/main/Redis_img/Redis0102.png)
 
 #### 第 3 阶段
 
@@ -35,7 +35,7 @@
 - master（主数据库）处理事务性操作（增删改），slave（从数据库）处理非事务性操作（查询），通过主从复制把master上的事务性操作同步到slave数据库中。
 - slave数据库中 mysql的master/slave就是网站的标配!
 
-![Redis0103](D:\Program\MyNotes\notes_image\Redis\Redis0103.png)
+![Redis0103](https://github.com/gvcheng/note_images/blob/main/Redis_img/Redis0103.png)
 
 #### 第 4 阶段
 
@@ -44,7 +44,7 @@
 - 分库分表开始流行,mysql也提出了表分区,虽然不稳定,但我们看到了希望 
 - 开始吧,mysql集群
 
-![Redis0104](D:\Program\MyNotes\notes_image\Redis\Redis0104.png)
+![Redis0104](https://github.com/gvcheng/note_images/blob/main/Redis_img/Redis0104.png)
 
 
 
@@ -146,11 +146,11 @@ Redis 是一种运行速度很快、并发性能很强，并且运行在内存�
 
 - Redis 官方地址：http://www.redis.net.cn/
 
-![0105](D:\Program\MyNotes\notes_image\Redis\Redis0105.png)
+![0105](https://github.com/gvcheng/note_images/blob/main/Redis_img/Redis0105.png)
 
 - 图形工具地址：https://redisdesktop.com/download
 
-![0106](D:\Program\MyNotes\notes_image\Redis\Redis0106.png)
+![0106](https://github.com/gvcheng/note_images/blob/main/Redis_img/Redis0106.png)
 
 
 
@@ -1573,7 +1573,7 @@ slaveof 192.168.44.129 6379               # 3关联新主库
 
 #### 3.5.4 复制原理
 
-![0107](D:\Program\MyNotes\notes_image\Redis\Redis0107.png)
+![0107](https://github.com/gvcheng/note_images/blob/main/Redis_img/Redis0107.png)
 
 完成上面几个步骤后就完成了从服务器数据初始化的所有操作，从服务器此时可以接收来自用户的读请
 求
@@ -2413,7 +2413,7 @@ public class FlashSale {
 }
 ```
 
-![0108](D:\Program\MyNotes\notes_image\Redis\Redis0108.png)
+![0108](https://github.com/gvcheng/note_images/blob/main/Redis_img/Redis0108.png)
 
 
 
@@ -2447,7 +2447,7 @@ location / {
 
 3. 使用 JMeter 模拟 1 秒内发出 400 个 http 请求，会发现同一个商品会被两台服务器同时抢购（分布式环境下 synchronized 锁失效，出现超卖问题）。
 
-   ![0109](D:\Program\MyNotes\notes_image\Redis\Redis0109.png)
+   ![0109](https://github.com/gvcheng/note_images/blob/main/Redis_img/Redis0109.png)
 
 
 
@@ -2459,7 +2459,7 @@ location / {
 4. 风险 **3**：过期时间难以设定（10 秒太短可能不够用，60 秒太长浪费资源）。解决方案：开启定时器线程，当锁的剩余过期时间小于总过期时间的 1/3 时，自动延长过期时间（“续命” 机制）。
 5. 结论：自己实现分布式锁复杂度高，推荐使用成熟的分布式锁框架（如 Redisson）。
 
-![0110](D:\Program\MyNotes\notes_image\Redis\Redis0110.png)
+![0110](https://github.com/gvcheng/note_images/blob/main/Redis_img/Redis0110.png)
 
 
 
@@ -2531,4 +2531,5 @@ public class TestKill {
 实现分布式锁的方案有很多，例如 Zookeeper（特点：高可靠性）、Redis（特点：高性能）。
 
 目前工业界应用最多的分布式锁方案仍是 Redis，因其高性能特性更适配高并发场景（如秒杀、抢购）。
+
 
