@@ -140,13 +140,13 @@ Spring Initializr 本质是一个 Web 应用，能提供基础项目结构，帮
 
 #### （1）创建Spring Boot项目
 
-![0101](D:\Program\MyNotes\notes_image\Springboot\springboot0101.png)
+![0101](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0101.png)
 
-![0102](D:\Program\MyNotes\notes_image\Springboot\springboot0102.png)
+![0102](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0102.png)
 
 生成后的项目**目录结构**如下：
 
-![0103](D:\Program\MyNotes\notes_image\Springboot\springboot0103.png)
+![0103](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0103.png)
 
 #### （2）创建 Controller并修改默认端口（8080）
 
@@ -164,13 +164,13 @@ public class HelloController {
 
 我们想要更改端口测试一下，在`application.properties`更改
 
-![0104](D:\Program\MyNotes\notes_image\Springboot\springboot0104.png)
+![0104](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0104.png)
 
 #### （3）运行项目测试
 
 运行主程序启动类SpringbootDemoApplication，项目启动成功后，在浏览器上访问http://127.0.0.1:8888/hello/sayHello
 
-![0105](D:\Program\MyNotes\notes_image\Springboot\springboot0105.png)
+![0105](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0105.png)
 
 页面输出的内容是“hello Spring Boot!”，至此，构建Spring Boot项目就完成了
 
@@ -255,22 +255,22 @@ class SpringbootQuickstartDemoApplicationTests {
 
 - <font color="blue">开启自动编译</font>：选择IDEA工具界面的【File】→【Settings】选项，打开Compiler面板设置页面，勾选“Build project automatically”选项将项目设置为自动编译，单击【Apply】→【OK】按钮保存设置。
 
-![0106](D:\Program\MyNotes\notes_image\Springboot\springboot0106.png)
+![0106](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0106.png)
 
 - <font color="blue">开启运行中自动编译</font>： 【File】→【Settings】 → 【Advanced Settings】
 
   勾选 `Allow auto-make to start even if developed application is currently running`
 
-![0107](D:\Program\MyNotes\notes_image\Springboot\springboot0107.png)
+![0107](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0107.png)
 
 ##### （3）热部署效果测试
 
 启动项目后访问 http://127.0.0.1:8888/hello/sayHello；
-![0108](D:\Program\MyNotes\notes_image\Springboot\springboot0108.png)
+![0108](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0108.png)
 
 将DemoController 类中的请求处理方法hello()的返回值修改为“你好，Spring Boot！！！”并保存，查看控制台信息会发现项目能够自动构建和编译，说明项目热部署生效。
 
-![0109](D:\Program\MyNotes\notes_image\Springboot\springboot0109.png)
+![0109](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0109.png)
 
 
 
@@ -379,7 +379,7 @@ Person{id=1,name='tom',hobby=[吃饭,睡觉,打豆豆],family=[father, mother],m
 
 调整文件编码格式：
 
-![0110](D:\Program\MyNotes\notes_image\Springboot\springboot0110.png)
+![0110](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0110.png)
 
 设置Tomcat及Http编码：
 
@@ -744,7 +744,7 @@ Spring Boot 项目的 pom.xml 有两个核心依赖：<font color="blue">**sprin
 </parent>
 ```
 
-![0111](D:\Program\MyNotes\notes_image\Springboot\springboot0111.png)
+![0111](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0111.png)
 
 将spring-boot-starter-parent依赖作为Spring Boot项目的统一父项目依赖管理，并将项
 目版本号统一为3.5.6，该版本号根据实际开发需求是可以修改的；
@@ -766,7 +766,7 @@ starter-parent的底层有一个父依赖spring-boot-dependencies：
 </properties>
 ```
 
-![0112](D:\Program\MyNotes\notes_image\Springboot\springboot0112.png)
+![0112](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0112.png)
 
 因此，项目引入 spring-boot-starter-parent 管理的依赖时，无需指定版本号。
 
@@ -829,7 +829,7 @@ Spring Boot除了提供有上述介绍的Web依赖启动器外，还提供了其
 
 https://docs.spring.io/spring-boot/reference/using/build-systems.html#using.build-systems.starters
 
-![0113](D:\Program\MyNotes\notes_image\Springboot\springboot0113.png)
+![0113](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0113.png)
 
 对于官方未整合的框架（如 MyBatis、Druid），第三方团队会提供自定义 Starter（如 mybatis-spring-boot-starter、druid-spring-boot-starter），引入时需手动指定版本。
 
@@ -954,7 +954,7 @@ public @interface EnableAutoConfiguration {
   }
   ```
 
-  ![0114](D:\Program\MyNotes\notes_image\Springboot\springboot0114.png)
+  ![0114](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0114.png)
 
   启动类必须放在项目根目录（如 `com.gvc`），否则子包中的组件无法被扫描到。
 
@@ -1058,7 +1058,7 @@ public @interface EnableAutoConfiguration {
 
 声明需要自动加载的自动配置类（AutoConfiguration 类），Spring Boot 2.7+ 引入的新文件，替代了旧版本中 `spring.factories` 文件，文件内容是一系列自动配置类的全限定名（每行一个类），例如：
 
-![springboot0115](D:\Program\MyNotes\notes_image\Springboot\springboot0115.png)
+![springboot0115](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0115.png)
 
 `META-INF/spring-autoconfigure-metadata.properties`文件存储自动配置类的元数据，用于优化自动配置的条件判断效率，帮助快速判断 “这些类是否应该生效”。
 
@@ -1148,7 +1148,7 @@ INSERT INTO t_comment VALUES ('5', '很不错', '李四', '2');
 
 通过 Spring Initializr 构建项目，勾选以下依赖：Spring Web（Web 支持），MyBatis Framework（MyBatis 核心），MySQL Driver（MySQL 驱动）。
 
-![0116](D:\Program\MyNotes\notes_image\Springboot\springboot0116.png)
+![0116](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0116.png)
 
 ##### ③ 编写实体类（对应数据库表）
 
@@ -1261,9 +1261,9 @@ Comment{id=1, content='很全、很详细', author='lucy', aId=1}
 
 ① ② 步骤可由**插件**【**free Mybatis plugin**】生成;
 
-![0117](D:\Program\MyNotes\notes_image\Springboot\springboot0117.png)
+![0117](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0117.png)
 
-![0118](D:\Program\MyNotes\notes_image\Springboot\springboot0118.png)
+![0118](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0118.png)
 
 
 
@@ -1531,7 +1531,7 @@ Thymeleaf 是基于服务器端的 Java 模板引擎，支持 HTML 原型（静�
 </html>
 ```
 
-![0119](D:\Program\MyNotes\notes_image\Springboot\springboot0119.png)
+![0119](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0119.png)
 
 ##### （2）常用 th: 标签
 
@@ -1708,7 +1708,7 @@ Spring Boot 默认扫描以下目录的静态资源（CSS、JS、图片等）：
 
 ##### （1）创建Spring Boot项目，引入Thymeleaf依赖
 
-![0120](D:\Program\MyNotes\notes_image\Springboot\springboot0120.png)
+![0120](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0120.png)
 
 ##### （2）编写配置文件application.properties
 
@@ -1778,7 +1778,7 @@ public class LoginController {
 
 启动项目，访问 `http://localhost:8080/toLoginPage`
 
-![0121](D:\Program\MyNotes\notes_image\Springboot\springboot0121.png)
+![0121](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0121.png)
 
 
 
@@ -1816,7 +1816,7 @@ Lombok 是 Java 开发中的一个工具库，通过注解简化代码编写。
 
 Spring Web，MyBatis Framework，MySQL Driver，Lombok。
 
-![0122](D:\Program\MyNotes\notes_image\Springboot\springboot0122.png)
+![0122](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0122.png)
 
 #### （2）补充依赖（pom.xml）
 
@@ -2078,9 +2078,9 @@ public class Springbootdemo5Application {
 
 通过 Postman 发送 HTTP 请求，测试 CRUD 功能
 
-![0123](D:\Program\MyNotes\notes_image\Springboot\springboot0123.png)
+![0123](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0123.png)
 
-![0124](D:\Program\MyNotes\notes_image\Springboot\springboot0124.png)
+![0124](https://github.com/gvcheng/note_images/blob/main/springboot_img/springboot0124.png)
 
 
 
@@ -2131,3 +2131,4 @@ nohup java -jar springbootdemo5-0.0.1-SNAPSHOT.jar > springboot.log 2>&1 &
 > - `> springboot.log`：将标准输出重定向到 `springboot.log` 文件；
 > - `2>&1`：将错误输出重定向到标准输出，统一写入日志文件；
 > - 最后一个 `&`：将进程放入后台运行。
+
