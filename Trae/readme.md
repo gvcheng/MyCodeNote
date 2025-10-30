@@ -1,2 +1,2 @@
 Trae相关笔记，先填个坑...
-https://docs.trae.cn/ide/tutorial-mcp-figma
+https://docs.trae.cn/ide/what-is-trae
