@@ -176,7 +176,7 @@ MP提供强大的条件构造器，支持各种复杂的`where`条件，满足�
 
 #### 4.1.1 核心构造器分类
 
-![01](D:\Program\MyNotes\notes_image\mybatis-plus\mp01.png)
+![01](https://github.com/gvcheng/note_images/blob/main/MybatisPlus_img/mp01.png)
 
 |构造器|适用场景|推荐使用|
 |---|---|---|
@@ -263,7 +263,7 @@ MP支持结合`Wrapper`构建复杂where条件，同时自定义SQL的其他部�
 
 需求：将id在指定范围的用户余额扣减指定值
 
-![02](D:\Program\MyNotes\notes_image\mybatis-plus\mp02.png)
+![02](https://github.com/gvcheng/note_images/blob/main/MybatisPlus_img/mp02.png)
 
 只用mp在业务代码里编写sql语句，不符合规范。
 mp善于处理where条件编写，无论多复杂都便于快速定义；但sql语句前半部分如`set balance = balance-200`只能硬编码在业务逻辑里；
@@ -322,7 +322,7 @@ MP的`Wrapper`主要用于单表，多表关联查询可直接自定义SQL，示
 
 MP提供了通用的`IService`接口和`ServiceImpl`实现类，封装了更上层的CRUD方法（包含批量操作、分页操作等），弥补了`BaseMapper`在业务层的功能不足。
 
-![03](D:\Program\MyNotes\notes_image\mybatis-plus\mp03.png)
+![03](https://github.com/gvcheng/note_images/blob/main/MybatisPlus_img/mp03.png)
 
 #### 4.3.1 使用流程
 
@@ -545,7 +545,7 @@ private User buildUser(int i) {
 
 执行结果如下，约3min46s
 
-![04](D:\Program\MyNotes\notes_image\mybatis-plus\mp04.png)
+![04](https://github.com/gvcheng/note_images/blob/main/MybatisPlus_img/mp04.png)
 
 ###### MybatisPlus批处理
 
@@ -570,7 +570,7 @@ void testSaveBatch() {
 
 执行最终耗时如下，约19s
 
-![](D:\Program\MyNotes\notes_image\mybatis-plus\mp05.png)
+![](https://github.com/gvcheng/note_images/blob/main/MybatisPlus_img/mp05.png)
 
 可以看到使用了批处理以后，比逐条新增效率提高了10倍左右，性能还是不错的。
 
@@ -639,7 +639,7 @@ spring:
 
 再次测试插入10万条数据，可以发现速度有非常明显的提升：约6s
 
-![06](D:\Program\MyNotes\notes_image\mybatis-plus\mp06.png)
+![06](https://github.com/gvcheng/note_images/blob/main/MybatisPlus_img/mp06.png)
 
 
 
@@ -665,15 +665,15 @@ MP提供代码生成器（可通过IDEA插件快速使用），能根据数据�
 
 插件安装：
 
-![07](D:\Program\MyNotes\notes_image\mybatis-plus\mp07.png)
+![07](https://github.com/gvcheng/note_images/blob/main/MybatisPlus_img/mp07.png)
 
 安装成功后 `Tools`多出两个选项，具体分别如下
 
-![08](D:\Program\MyNotes\notes_image\mybatis-plus\mp08.png)
+![08](https://github.com/gvcheng/note_images/blob/main/MybatisPlus_img/mp08.png)
 
-![09](D:\Program\MyNotes\notes_image\mybatis-plus\mp09.png)
+![09](https://github.com/gvcheng/note_images/blob/main/MybatisPlus_img/mp09.png)
 
-![10](D:\Program\MyNotes\notes_image\mybatis-plus\mp10.png)
+![10](https://github.com/gvcheng/note_images/blob/main/MybatisPlus_img/mp10.png)
 
 自动生成的代码包含完整的基础CRUD，示例：
 
