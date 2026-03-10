@@ -97,7 +97,7 @@ a6cec8ff4765ca0876d0453f3ccab205fca29b5dce74f8cfbad8d76571bf79be
 
 （注：Docker Client端通过命令操作Docker Server完成镜像和容器管理）
 
-![01](D:\Program\MyNotes\notes_image\docker\docker01.png)
+![01](https://github.com/gvcheng/note_images/blob/main/Docker_img/docker01.png)
 
 ### Docker run命令解读
 
@@ -131,7 +131,7 @@ docker run -d \
 
 宿主机IP为`192.168.44.128`，通过`-p 3306:3306`将宿主机3306端口映射到mysql容器3306端口，外部连接地址为：`jdbc:mysql://192.168.44.128:3306`
 
-![02](D:\Program\MyNotes\notes_image\docker\docker02.png)
+![02](https://github.com/gvcheng/note_images/blob/main/Docker_img/docker02.png)
 
 ### 镜像命名规范
 
@@ -171,7 +171,7 @@ docker run -d \
 
 Docker的核心命令为**镜像操作**和**容器操作**，涵盖镜像的拉取、构建、管理，以及容器的启停、查看、进入等，官方文档：[https://docs.docker.com/](https://docs.docker.com/)
 
-![03](D:\Program\MyNotes\notes_image\docker\docker03.png)
+![03](https://github.com/gvcheng/note_images/blob/main/Docker_img/docker03.png)
 
 #### 镜像与容器操作流转
 
@@ -298,7 +298,7 @@ docker rm -f nginx
 
 ### 数据卷（volume）
 
-![04](D:\Program\MyNotes\notes_image\docker\docker04.png)
+![04](https://github.com/gvcheng/note_images/blob/main/Docker_img/docker04.png)
 
 #### 核心概念
 
@@ -418,7 +418,7 @@ docker run -d \
 2. **层（Layer）**：在基础镜像上执行的每一步操作（如安装JRE、拷贝Jar包、配置环境变量）都会生成一个新的层，层可复用。
 3. **入口（Entrypoint）**：镜像的运行入口，指定容器启动时执行的命令（如Java应用的`java -jar xx.jar`）。
 
-![05](D:\Program\MyNotes\notes_image\docker\docker05.png)
+![05](https://github.com/gvcheng/note_images/blob/main/Docker_img/docker05.png)
 
 ### Dockerfile
 
